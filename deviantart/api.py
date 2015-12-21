@@ -465,6 +465,7 @@ class Api(object):
         }
 
 
+
     def get_deviation_content(self, deviationid):
 
         """Fetch full data that is not included in the main devaition object
@@ -492,14 +493,15 @@ class Api(object):
 
         return content
 
+
+
     def download_deviation(self, deviationid):
 
         """Get the original file download (if allowed)
 
         :param deviationid: The deviationid you want download info for
         """
-        
-        print urlencode(deviationid)
+
         response = self._req('/deviation/download/{}'.format(deviationid))
 
         return {
