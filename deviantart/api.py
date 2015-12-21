@@ -430,65 +430,84 @@ class Api(object):
 
 
 
-#     def get_deviation_embeddedcontent(self, deviationid, offset_deviationid="", offset=0, limit=10):
-#
-#         response = self._req('/deviation/embeddedcontent', {
-#             'deviationid' : deviationid,
-#             'offset_deviationid' : offset_deviationid,
-#             'offset' : 0,
-#             'limit' : 0
-#         })
-#
-#         deviations = []
-#
-#         for item in response['results']:
-#
-#             d = Deviation()
-#             d.from_dict(item)
-#
-#             deviations.append(d)
-#
-#         return {
-#             "results" : deviations,
-#             "has_less" : response['has_less'],
-#             "has_more" : response['has_more'],
-#             "prev_offset" : response['prev_offset'],
-#             "next_offset" : response['next_offset']
-#         }
+    def get_deviation_embeddedcontent(self, deviationid, offset_deviationid="", offset=0, limit=10):
+
+        """Fetch content embedded in a deviation
+
+        :param deviationid: The deviationid of container deviation
+        :param offset_deviationid: UUID of embedded deviation to use as an offset
+        :param offset: the pagination offset
+        :param limit: the pagination limit
+        """
+        
+        response = self._req('/deviation/embeddedcontent', {
+            'deviationid' : deviationid,
+            'offset_deviationid' : offset_deviationid,
+            'offset' : 0,
+            'limit' : 0
+        })
+
+        deviations = []
+
+        for item in response['results']:
+
+            d = Deviation()
+            d.from_dict(item)
+
+            deviations.append(d)
+
+        return {
+            "results" : deviations,
+            "has_less" : response['has_less'],
+            "has_more" : response['has_more'],
+            "prev_offset" : response['prev_offset'],
+            "next_offset" : response['next_offset']
+        }
 
 
-#     def get_deviation_content(self, deviationid):
-#
-#         response = self._req('/deviation/content', {
-#             'deviationid':deviationid
-#         })
-#
-#         content = {}
-#
-#         if "html" in response:
-#             content['html'] = response['html']
-#
-#         if "css" in response:
-#             content['css'] = response['css']
-#
-#         if "css_fonts" in response:
-#             content['css_fonts'] = response['css_fonts']
-#
-#         return content
+    def get_deviation_content(self, deviationid):
 
-#     def download_deviation(self, deviationid):
-#         """
-#             NOTE: 400 Error
-#         """
-#         print urlencode(deviationid)
-#         response = self._req('/deviation/download/{}'.format(deviationid))
-#
-#         return {
-#             'src' : response['src'],
-#             'width' : response['width'],
-#             'height' : response['height'],
-#             'filesize' : response['filesize']
-#         }
+        """Fetch full data that is not included in the main devaition object
+
+        The endpoint works with journals and literatures. Deviation objects returned from API contain only excerpt of a journal, use this endpoint to load full content. 
+        Any custom CSS rules and fonts applied to journal are also returned.
+
+        :param deviationid: UUID of the deviation to fetch full data for
+        """
+        
+        response = self._req('/deviation/content', {
+            'deviationid':deviationid
+        })
+
+        content = {}
+
+        if "html" in response:
+            content['html'] = response['html']
+
+        if "css" in response:
+            content['css'] = response['css']
+
+        if "css_fonts" in response:
+            content['css_fonts'] = response['css_fonts']
+
+        return content
+
+    def download_deviation(self, deviationid):
+
+        """Get the original file download (if allowed)
+
+        :param deviationid: The deviationid you want download info for
+        """
+        
+        print urlencode(deviationid)
+        response = self._req('/deviation/download/{}'.format(deviationid))
+
+        return {
+            'src' : response['src'],
+            'width' : response['width'],
+            'height' : response['height'],
+            'filesize' : response['filesize']
+        }
 
     def get_collections(self, username="", calculate_size=False, ext_preload=False, offset=0, limit=10):
 
