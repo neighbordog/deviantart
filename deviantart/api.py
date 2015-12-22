@@ -28,7 +28,13 @@ class DeviantartError(Exception):
 
 class Api(object):
 
-    """The API Interface (handles requests to the DeviantArt API)"""
+    """The API Interface (handles requests to the DeviantArt API)
+
+       :param client_id: client_id provided by DeviantArt
+       :param client_secret: client_secret provided by DeviantArt
+       :param standard_grant_type: The used authorization type | client_credentials (read-only) or authorization_code
+       :param scope: The scope of data the application can access    
+    """
 
     def __init__(
         self,
@@ -39,13 +45,7 @@ class Api(object):
         scope="browse feed message note stash user user.manage comment.post collection"
     ):
 
-        """Instantiate Class and create OAuth Client
-
-        :param client_id: client_id provided by DeviantArt
-        :param client_secret: client_secret provided by DeviantArt
-        :param standard_grant_type: The used authorization type | client_credentials (read-only) or authorization_code
-        :param scope: The scope of data the application can access
-        """
+        """Instantiate Class and create OAuth Client"""
 
         self.client_id = client_id
         self.client_secret = client_secret
