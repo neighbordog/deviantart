@@ -7,7 +7,7 @@ deviantart: A python wrapper for the DeviantArt API
 Installation
 ----------
 
-Installation using pip::
+Installation using ``pip``::
 
     pip install deviantart
    
