@@ -14,7 +14,7 @@ Installation using ``pip``::
 Basic usage
 ----------
 
-::
+.. code:: python
    
    #import deviantart library
    import deviantart
