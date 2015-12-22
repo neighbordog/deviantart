@@ -14,8 +14,7 @@ Installation using ``pip``::
 Basic usage
 ----------
 
-.. code-block:: python
-   :linenos:
+::
    
    #import deviantart library
    import deviantart
