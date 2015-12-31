@@ -1,0 +1,1321 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>deviantart package &mdash; deviantart 0.1.3 documentation</title>
+  
+
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+    <link rel="top" title="deviantart 0.1.3 documentation" href="index.html"/>
+        <link rel="up" title="Reference" href="reference.html"/>
+        <link rel="prev" title="Reference" href="reference.html"/> 
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="index.html" class="icon icon-home"> deviantart
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.1.3
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+                <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="getting_started.html">Getting Started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="examples.html">Examples</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="reference.html">Reference</a><ul class="current">
+<li class="toctree-l2 current"><a class="current reference internal" href="">deviantart package</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#submodules">Submodules</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#module-deviantart.api">deviantart.api module</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#deviantart-api">deviantart.api</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#module-deviantart.comment">deviantart.comment module</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#deviantart-comment">deviantart.comment</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#module-deviantart.deviation">deviantart.deviation module</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#deviantart-deviation">deviantart.deviation</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#module-deviantart.message">deviantart.message module</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#deviantart-message">deviantart.message</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#module-deviantart.status">deviantart.status module</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#deviantart-status">deviantart.status</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#module-deviantart.user">deviantart.user module</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#deviantart-user">deviantart.user</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#module-deviantart">Module contents</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#deviantart">deviantart</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="index.html">deviantart</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="index.html">Docs</a> &raquo;</li>
+      
+          <li><a href="reference.html">Reference</a> &raquo;</li>
+      
+    <li>deviantart package</li>
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="_sources/deviantart.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="deviantart-package">
+<h1>deviantart package<a class="headerlink" href="#deviantart-package" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="module-deviantart.api">
+<span id="deviantart-api-module"></span><h2>deviantart.api module<a class="headerlink" href="#module-deviantart.api" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="deviantart-api">
+<h3>deviantart.api<a class="headerlink" href="#deviantart-api" title="Permalink to this headline">¶</a></h3>
+<p>A Python wrapper for the DeviantArt API</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">copyright:</th><td class="field-body"><ol class="first last loweralpha simple" start="3">
+<li>2015 by Kevin Eichhorn</li>
+</ol>
+</td>
+</tr>
+</tbody>
+</table>
+<dl class="class">
+<dt id="deviantart.api.Api">
+<em class="property">class </em><code class="descclassname">deviantart.api.</code><code class="descname">Api</code><span class="sig-paren">(</span><em>client_id</em>, <em>client_secret</em>, <em>redirect_uri=''</em>, <em>standard_grant_type='client_credentials'</em>, <em>scope='browse feed message note stash user user.manage comment.post collection'</em><span class="sig-paren">)</span><a class="headerlink" href="#deviantart.api.Api" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal"><span class="pre">object</span></code></p>
+<p>The API Interface (handles requests to the DeviantArt API)</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>client_id</strong> &#8211; client_id provided by DeviantArt</li>
+<li><strong>client_secret</strong> &#8211; client_secret provided by DeviantArt</li>
+<li><strong>standard_grant_type</strong> &#8211; The used authorization type | client_credentials (read-only) or authorization_code</li>
+<li><strong>scope</strong> &#8211; The scope of data the application can access</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<dl class="method">
+<dt id="deviantart.api.Api.auth">
+<code class="descname">auth</code><span class="sig-paren">(</span><em>code=''</em>, <em>refresh_token=''</em><span class="sig-paren">)</span><a class="headerlink" href="#deviantart.api.Api.auth" title="Permalink to this definition">¶</a></dt>
+<dd><p>Authenticates user and retrieves (and refreshes) access token</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>code</strong> &#8211; code provided after redirect (authorization_code only)</li>
+<li><strong>refresh_token</strong> &#8211; the refresh_token to update access_token without authorization</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="deviantart.api.Api.auth_uri">
+<code class="descname">auth_uri</code><a class="headerlink" href="#deviantart.api.Api.auth_uri" title="Permalink to this definition">¶</a></dt>
+<dd><p>The authorzation URL that should be provided to the user</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="deviantart.api.Api.browse">
+<code class="descname">browse</code><span class="sig-paren">(</span><em>endpoint='hot'</em>, <em>category_path=''</em>, <em>seed=''</em>, <em>q=''</em>, <em>timerange='24hr'</em>, <em>tag=''</em>, <em>offset=0</em>, <em>limit=10</em><span class="sig-paren">)</span><a class="headerlink" href="#deviantart.api.Api.browse" title="Permalink to this definition">¶</a></dt>
+<dd><p>Fetch deviations from public endpoints</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>endpoint</strong> &#8211; The endpoint from which the deviations will be fetched (hot/morelikethis/newest/undiscovered/popular/tags)</li>
+<li><strong>category_path</strong> &#8211; category path to fetch from</li>
+<li><strong>q</strong> &#8211; Search query term</li>
+<li><strong>timerange</strong> &#8211; The timerange</li>
+<li><strong>tag</strong> &#8211; The tag to browse</li>
+<li><strong>offset</strong> &#8211; the pagination offset</li>
+<li><strong>limit</strong> &#8211; the pagination limit</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="deviantart.api.Api.browse_dailydeviations">
+<code class="descname">browse_dailydeviations</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#deviantart.api.Api.browse_dailydeviations" title="Permalink to this definition">¶</a></dt>
+<dd><p>Retrieves Daily Deviations</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="deviantart.api.Api.browse_morelikethis_preview">
+<code class="descname">browse_morelikethis_preview</code><span class="sig-paren">(</span><em>seed</em><span class="sig-paren">)</span><a class="headerlink" href="#deviantart.api.Api.browse_morelikethis_preview" title="Permalink to this definition">¶</a></dt>
+<dd><p>Fetch More Like This preview result for a seed deviation</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>seed</strong> &#8211; The deviationid to fetch more like</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="deviantart.api.Api.browse_userjournals">
+<code class="descname">browse_userjournals</code><span class="sig-paren">(</span><em>username</em>, <em>featured=False</em>, <em>offset=0</em>, <em>limit=10</em><span class="sig-paren">)</span><a class="headerlink" href="#deviantart.api.Api.browse_userjournals" title="Permalink to this definition">¶</a></dt>
+<dd><p>Fetch user journals from user</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>username</strong> &#8211; name of user to retrieve journals from</li>
+<li><strong>featured</strong> &#8211; fetch only featured or not</li>
+<li><strong>offset</strong> &#8211; the pagination offset</li>
+<li><strong>limit</strong> &#8211; the pagination limit</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="deviantart.api.Api.create_notes_folder">
+<code class="descname">create_notes_folder</code><span class="sig-paren">(</span><em>title</em>, <em>parentid=''</em><span class="sig-paren">)</span><a class="headerlink" href="#deviantart.api.Api.create_notes_folder" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create new folder</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>title</strong> &#8211; The title of the folder to create</li>
+<li><strong>parentid</strong> &#8211; The UUID of the parent folder</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="deviantart.api.Api.delete_message">
+<code class="descname">delete_message</code><span class="sig-paren">(</span><em>messageid=''</em>, <em>folderid=''</em>, <em>stackid=''</em><span class="sig-paren">)</span><a class="headerlink" href="#deviantart.api.Api.delete_message" title="Permalink to this definition">¶</a></dt>
+<dd><p>Delete a message or a message stack</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>folderid</strong> &#8211; The folder to delete the message from, defaults to inbox</li>
+<li><strong>messageid</strong> &#8211; The message to delete</li>
+<li><strong>stackid</strong> &#8211; The stack to delete</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="deviantart.api.Api.delete_notes">
+<code class="descname">delete_notes</code><span class="sig-paren">(</span><em>noteids</em><span class="sig-paren">)</span><a class="headerlink" href="#deviantart.api.Api.delete_notes" title="Permalink to this definition">¶</a></dt>
+<dd><p>Delete a note or notes</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>noteids</strong> &#8211; The noteids to delete</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="deviantart.api.Api.delete_notes_folder">
+<code class="descname">delete_notes_folder</code><span class="sig-paren">(</span><em>folderid</em><span class="sig-paren">)</span><a class="headerlink" href="#deviantart.api.Api.delete_notes_folder" title="Permalink to this definition">¶</a></dt>
+<dd><p>Delete note folder</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>folderid</strong> &#8211; The UUID of the folder to delete</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="deviantart.api.Api.download_deviation">
+<code class="descname">download_deviation</code><span class="sig-paren">(</span><em>deviationid</em><span class="sig-paren">)</span><a class="headerlink" href="#deviantart.api.Api.download_deviation" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get the original file download (if allowed)</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>deviationid</strong> &#8211; The deviationid you want download info for</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="deviantart.api.Api.fave">
+<code class="descname">fave</code><span class="sig-paren">(</span><em>deviationid</em>, <em>folderid=''</em><span class="sig-paren">)</span><a class="headerlink" href="#deviantart.api.Api.fave" title="Permalink to this definition">¶</a></dt>
+<dd><p>Add deviation to favourites</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>deviationid</strong> &#8211; Id of the Deviation to favourite</li>
+<li><strong>folderid</strong> &#8211; Optional UUID of the Collection folder to add the favourite into</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="deviantart.api.Api.get_categories">
+<code class="descname">get_categories</code><span class="sig-paren">(</span><em>catpath='/'</em><span class="sig-paren">)</span><a class="headerlink" href="#deviantart.api.Api.get_categories" title="Permalink to this definition">¶</a></dt>
+<dd><p>Fetch the categorytree</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>catpath</strong> &#8211; The category to list children of</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="deviantart.api.Api.get_collection">
+<code class="descname">get_collection</code><span class="sig-paren">(</span><em>folderid</em>, <em>username=''</em>, <em>offset=0</em>, <em>limit=10</em><span class="sig-paren">)</span><a class="headerlink" href="#deviantart.api.Api.get_collection" title="Permalink to this definition">¶</a></dt>
+<dd><p>Fetch collection folder contents</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>folderid</strong> &#8211; UUID of the folder to list</li>
+<li><strong>username</strong> &#8211; The user to list folders for, if omitted the authenticated user is used</li>
+<li><strong>offset</strong> &#8211; the pagination offset</li>
+<li><strong>limit</strong> &#8211; the pagination limit</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="deviantart.api.Api.get_collections">
+<code class="descname">get_collections</code><span class="sig-paren">(</span><em>username=''</em>, <em>calculate_size=False</em>, <em>ext_preload=False</em>, <em>offset=0</em>, <em>limit=10</em><span class="sig-paren">)</span><a class="headerlink" href="#deviantart.api.Api.get_collections" title="Permalink to this definition">¶</a></dt>
+<dd><p>Fetch collection folders</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>username</strong> &#8211; The user to list folders for, if omitted the authenticated user is used</li>
+<li><strong>calculate_size</strong> &#8211; The option to include the content count per each collection folder</li>
+<li><strong>ext_preload</strong> &#8211; Include first 5 deviations from the folder</li>
+<li><strong>offset</strong> &#8211; the pagination offset</li>
+<li><strong>limit</strong> &#8211; the pagination limit</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="deviantart.api.Api.get_comments">
+<code class="descname">get_comments</code><span class="sig-paren">(</span><em>endpoint='deviation'</em>, <em>deviationid=''</em>, <em>commentid=''</em>, <em>username=''</em>, <em>statusid=''</em>, <em>ext_item=False</em>, <em>offset=0</em>, <em>limit=10</em>, <em>maxdepth=0</em><span class="sig-paren">)</span><a class="headerlink" href="#deviantart.api.Api.get_comments" title="Permalink to this definition">¶</a></dt>
+<dd><p>Fetch comments</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>endpoint</strong> &#8211; The source/endpoint you want to fetch comments from (deviation/profile/status/siblings)</li>
+<li><strong>deviationid</strong> &#8211; The deviationid you want to fetch</li>
+<li><strong>commentid</strong> &#8211; The commentid you want to fetch</li>
+<li><strong>username</strong> &#8211; The username you want to get a list of status updates from</li>
+<li><strong>statusid</strong> &#8211; The statusid you want to fetch</li>
+<li><strong>ext_item</strong> &#8211; the pagination limit</li>
+<li><strong>offset</strong> &#8211; the pagination offset</li>
+<li><strong>limit</strong> &#8211; the pagination limit</li>
+<li><strong>maxdepth</strong> &#8211; Depth to query replies until</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="deviantart.api.Api.get_countries">
+<code class="descname">get_countries</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#deviantart.api.Api.get_countries" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get a list of countries</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="deviantart.api.Api.get_damntoken">
+<code class="descname">get_damntoken</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#deviantart.api.Api.get_damntoken" title="Permalink to this definition">¶</a></dt>
+<dd><p>Retrieve the dAmn auth token required to connect to the dAmn servers</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="deviantart.api.Api.get_data">
+<code class="descname">get_data</code><span class="sig-paren">(</span><em>endpoint='privacy'</em><span class="sig-paren">)</span><a class="headerlink" href="#deviantart.api.Api.get_data" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns policies of DeviantArt</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="deviantart.api.Api.get_deviation">
+<code class="descname">get_deviation</code><span class="sig-paren">(</span><em>deviationid</em><span class="sig-paren">)</span><a class="headerlink" href="#deviantart.api.Api.get_deviation" title="Permalink to this definition">¶</a></dt>
+<dd><p>Fetch a single deviation</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>deviationid</strong> &#8211; The deviationid you want to fetch</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="deviantart.api.Api.get_deviation_content">
+<code class="descname">get_deviation_content</code><span class="sig-paren">(</span><em>deviationid</em><span class="sig-paren">)</span><a class="headerlink" href="#deviantart.api.Api.get_deviation_content" title="Permalink to this definition">¶</a></dt>
+<dd><p>Fetch full data that is not included in the main devaition object</p>
+<p>The endpoint works with journals and literatures. Deviation objects returned from API contain only excerpt of a journal, use this endpoint to load full content.
+Any custom CSS rules and fonts applied to journal are also returned.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>deviationid</strong> &#8211; UUID of the deviation to fetch full data for</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="deviantart.api.Api.get_deviation_embeddedcontent">
+<code class="descname">get_deviation_embeddedcontent</code><span class="sig-paren">(</span><em>deviationid</em>, <em>offset_deviationid=''</em>, <em>offset=0</em>, <em>limit=10</em><span class="sig-paren">)</span><a class="headerlink" href="#deviantart.api.Api.get_deviation_embeddedcontent" title="Permalink to this definition">¶</a></dt>
+<dd><p>Fetch content embedded in a deviation</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>deviationid</strong> &#8211; The deviationid of container deviation</li>
+<li><strong>offset_deviationid</strong> &#8211; UUID of embedded deviation to use as an offset</li>
+<li><strong>offset</strong> &#8211; the pagination offset</li>
+<li><strong>limit</strong> &#8211; the pagination limit</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="deviantart.api.Api.get_deviation_metadata">
+<code class="descname">get_deviation_metadata</code><span class="sig-paren">(</span><em>deviationids</em>, <em>ext_submission=False</em>, <em>ext_camera=False</em>, <em>ext_stats=False</em>, <em>ext_collection=False</em><span class="sig-paren">)</span><a class="headerlink" href="#deviantart.api.Api.get_deviation_metadata" title="Permalink to this definition">¶</a></dt>
+<dd><p>Fetch deviation metadata for a set of deviations</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>deviationid</strong> &#8211; The deviationid you want to fetch</li>
+<li><strong>ext_submission</strong> &#8211; Return extended information - submission information</li>
+<li><strong>ext_camera</strong> &#8211; Return extended information - EXIF information (if available)</li>
+<li><strong>ext_stats</strong> &#8211; Return extended information - deviation statistics</li>
+<li><strong>ext_collection</strong> &#8211; Return extended information - favourited folder information</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="deviantart.api.Api.get_feedback">
+<code class="descname">get_feedback</code><span class="sig-paren">(</span><em>feedbacktype='comments'</em>, <em>folderid=''</em>, <em>stack=1</em>, <em>offset=0</em>, <em>limit=10</em><span class="sig-paren">)</span><a class="headerlink" href="#deviantart.api.Api.get_feedback" title="Permalink to this definition">¶</a></dt>
+<dd><p>Fetch feedback messages</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>feedbacktype</strong> &#8211; Type of feedback messages to fetch (comments/replies/activity)</li>
+<li><strong>folderid</strong> &#8211; The folder to fetch messages from, defaults to inbox</li>
+<li><strong>stack</strong> &#8211; True to use stacked mode, false to use flat mode</li>
+<li><strong>offset</strong> &#8211; the pagination offset</li>
+<li><strong>limit</strong> &#8211; the pagination limit</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="deviantart.api.Api.get_feedback_in_stack">
+<code class="descname">get_feedback_in_stack</code><span class="sig-paren">(</span><em>stackid</em>, <em>offset=0</em>, <em>limit=10</em><span class="sig-paren">)</span><a class="headerlink" href="#deviantart.api.Api.get_feedback_in_stack" title="Permalink to this definition">¶</a></dt>
+<dd><p>Fetch feedback messages in a stack</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>stackid</strong> &#8211; Id of the stack</li>
+<li><strong>offset</strong> &#8211; the pagination offset</li>
+<li><strong>limit</strong> &#8211; the pagination limit</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="deviantart.api.Api.get_friends">
+<code class="descname">get_friends</code><span class="sig-paren">(</span><em>username</em>, <em>offset=0</em>, <em>limit=10</em><span class="sig-paren">)</span><a class="headerlink" href="#deviantart.api.Api.get_friends" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get the users list of friends</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>username</strong> &#8211; The username you want to get a list of friends of</li>
+<li><strong>offset</strong> &#8211; the pagination offset</li>
+<li><strong>limit</strong> &#8211; the pagination limit</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="deviantart.api.Api.get_gallery_folder">
+<code class="descname">get_gallery_folder</code><span class="sig-paren">(</span><em>username=''</em>, <em>folderid=''</em>, <em>mode='popular'</em>, <em>offset=0</em>, <em>limit=10</em><span class="sig-paren">)</span><a class="headerlink" href="#deviantart.api.Api.get_gallery_folder" title="Permalink to this definition">¶</a></dt>
+<dd><p>Fetch gallery folder contents</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>username</strong> &#8211; The user to query, defaults to current user</li>
+<li><strong>folderid</strong> &#8211; UUID of the folder to list, if omitted query ALL folders</li>
+<li><strong>mode</strong> &#8211; Sort results by either newest or popular</li>
+<li><strong>offset</strong> &#8211; the pagination offset</li>
+<li><strong>limit</strong> &#8211; the pagination limit</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="deviantart.api.Api.get_gallery_folders">
+<code class="descname">get_gallery_folders</code><span class="sig-paren">(</span><em>username=''</em>, <em>calculate_size=False</em>, <em>ext_preload=False</em>, <em>offset=0</em>, <em>limit=10</em><span class="sig-paren">)</span><a class="headerlink" href="#deviantart.api.Api.get_gallery_folders" title="Permalink to this definition">¶</a></dt>
+<dd><p>Fetch gallery folders</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>username</strong> &#8211; The user to list folders for, if omitted the authenticated user is used</li>
+<li><strong>calculate_size</strong> &#8211; The option to include the content count per each gallery folder</li>
+<li><strong>ext_preload</strong> &#8211; Include first 5 deviations from the folder</li>
+<li><strong>offset</strong> &#8211; the pagination offset</li>
+<li><strong>limit</strong> &#8211; the pagination limit</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="deviantart.api.Api.get_mentions">
+<code class="descname">get_mentions</code><span class="sig-paren">(</span><em>folderid=''</em>, <em>stack=1</em>, <em>offset=0</em>, <em>limit=10</em><span class="sig-paren">)</span><a class="headerlink" href="#deviantart.api.Api.get_mentions" title="Permalink to this definition">¶</a></dt>
+<dd><p>Fetch mention messages</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>folderid</strong> &#8211; The folder to fetch messages from, defaults to inbox</li>
+<li><strong>stack</strong> &#8211; True to use stacked mode, false to use flat mode</li>
+<li><strong>offset</strong> &#8211; the pagination offset</li>
+<li><strong>limit</strong> &#8211; the pagination limit</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="deviantart.api.Api.get_mentions_in_stack">
+<code class="descname">get_mentions_in_stack</code><span class="sig-paren">(</span><em>stackid</em>, <em>offset=0</em>, <em>limit=10</em><span class="sig-paren">)</span><a class="headerlink" href="#deviantart.api.Api.get_mentions_in_stack" title="Permalink to this definition">¶</a></dt>
+<dd><p>Fetch mention messages in a stack</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>stackid</strong> &#8211; Id of the stack</li>
+<li><strong>offset</strong> &#8211; the pagination offset</li>
+<li><strong>limit</strong> &#8211; the pagination limit</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="deviantart.api.Api.get_messages">
+<code class="descname">get_messages</code><span class="sig-paren">(</span><em>folderid=''</em>, <em>stack=1</em>, <em>cursor=''</em><span class="sig-paren">)</span><a class="headerlink" href="#deviantart.api.Api.get_messages" title="Permalink to this definition">¶</a></dt>
+<dd><p>Feed of all messages</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>folderid</strong> &#8211; The folder to fetch messages from, defaults to inbox</li>
+<li><strong>stack</strong> &#8211; True to use stacked mode, false to use flat mode</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="deviantart.api.Api.get_note">
+<code class="descname">get_note</code><span class="sig-paren">(</span><em>noteid</em><span class="sig-paren">)</span><a class="headerlink" href="#deviantart.api.Api.get_note" title="Permalink to this definition">¶</a></dt>
+<dd><p>Fetch a single note</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>folderid</strong> &#8211; The UUID of the note</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="deviantart.api.Api.get_notes">
+<code class="descname">get_notes</code><span class="sig-paren">(</span><em>folderid=''</em>, <em>offset=0</em>, <em>limit=10</em><span class="sig-paren">)</span><a class="headerlink" href="#deviantart.api.Api.get_notes" title="Permalink to this definition">¶</a></dt>
+<dd><p>Fetch notes</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>folderid</strong> &#8211; The UUID of the folder to fetch notes from</li>
+<li><strong>offset</strong> &#8211; the pagination offset</li>
+<li><strong>limit</strong> &#8211; the pagination limit</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="deviantart.api.Api.get_notes_folders">
+<code class="descname">get_notes_folders</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#deviantart.api.Api.get_notes_folders" title="Permalink to this definition">¶</a></dt>
+<dd><p>Fetch note folders</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="deviantart.api.Api.get_status">
+<code class="descname">get_status</code><span class="sig-paren">(</span><em>statusid</em><span class="sig-paren">)</span><a class="headerlink" href="#deviantart.api.Api.get_status" title="Permalink to this definition">¶</a></dt>
+<dd><p>Fetch the status</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>statusid</strong> &#8211; Status uuid</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="deviantart.api.Api.get_statuses">
+<code class="descname">get_statuses</code><span class="sig-paren">(</span><em>username</em>, <em>offset=0</em>, <em>limit=10</em><span class="sig-paren">)</span><a class="headerlink" href="#deviantart.api.Api.get_statuses" title="Permalink to this definition">¶</a></dt>
+<dd><p>Fetch status updates of a user</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>username</strong> &#8211; The username you want to get a list of status updates from</li>
+<li><strong>offset</strong> &#8211; the pagination offset</li>
+<li><strong>limit</strong> &#8211; the pagination limit</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="deviantart.api.Api.get_user">
+<code class="descname">get_user</code><span class="sig-paren">(</span><em>username=''</em>, <em>ext_collections=False</em>, <em>ext_galleries=False</em><span class="sig-paren">)</span><a class="headerlink" href="#deviantart.api.Api.get_user" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get user profile information</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>username</strong> &#8211; username to lookup profile of</li>
+<li><strong>ext_collections</strong> &#8211; Include collection folder info</li>
+<li><strong>ext_galleries</strong> &#8211; Include gallery folder info</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="deviantart.api.Api.get_users">
+<code class="descname">get_users</code><span class="sig-paren">(</span><em>usernames</em><span class="sig-paren">)</span><a class="headerlink" href="#deviantart.api.Api.get_users" title="Permalink to this definition">¶</a></dt>
+<dd><p>Fetch user info for given usernames</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>username</strong> &#8211; The usernames you want metadata for (max. 50)</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="deviantart.api.Api.get_watchers">
+<code class="descname">get_watchers</code><span class="sig-paren">(</span><em>username</em>, <em>offset=0</em>, <em>limit=10</em><span class="sig-paren">)</span><a class="headerlink" href="#deviantart.api.Api.get_watchers" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get the user&#8217;s list of watchers</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>username</strong> &#8211; The username you want to get a list of watchers of</li>
+<li><strong>offset</strong> &#8211; the pagination offset</li>
+<li><strong>limit</strong> &#8211; the pagination limit</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="deviantart.api.Api.is_watching">
+<code class="descname">is_watching</code><span class="sig-paren">(</span><em>username</em><span class="sig-paren">)</span><a class="headerlink" href="#deviantart.api.Api.is_watching" title="Permalink to this definition">¶</a></dt>
+<dd><p>Check if user is being watched by the given user</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>username</strong> &#8211; Check if username is watching you</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="deviantart.api.Api.mark_notes">
+<code class="descname">mark_notes</code><span class="sig-paren">(</span><em>noteids</em>, <em>mark_as</em><span class="sig-paren">)</span><a class="headerlink" href="#deviantart.api.Api.mark_notes" title="Permalink to this definition">¶</a></dt>
+<dd><p>Mark notes</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>noteids</strong> &#8211; The noteids to delete</li>
+<li><strong>mark_as</strong> &#8211; Mark notes as (read/unread/starred/notstarred/spam)</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="deviantart.api.Api.move_notes">
+<code class="descname">move_notes</code><span class="sig-paren">(</span><em>noteids</em>, <em>folderid</em><span class="sig-paren">)</span><a class="headerlink" href="#deviantart.api.Api.move_notes" title="Permalink to this definition">¶</a></dt>
+<dd><p>Move notes to a folder</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>noteids</strong> &#8211; The noteids to move</li>
+<li><strong>folderid</strong> &#8211; The folderid to move notes to</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="deviantart.api.Api.post_comment">
+<code class="descname">post_comment</code><span class="sig-paren">(</span><em>target</em>, <em>body</em>, <em>comment_type='profile'</em>, <em>commentid=''</em><span class="sig-paren">)</span><a class="headerlink" href="#deviantart.api.Api.post_comment" title="Permalink to this definition">¶</a></dt>
+<dd><p>Post comment</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>target</strong> &#8211; The target you want to post the comment to (username/deviation UUID/status UUID)</li>
+<li><strong>body</strong> &#8211; The comment text</li>
+<li><strong>comment_type</strong> &#8211; The type of entry you want to post your comment to</li>
+<li><strong>commentid</strong> &#8211; The commentid you are replying to</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="deviantart.api.Api.post_status">
+<code class="descname">post_status</code><span class="sig-paren">(</span><em>body=''</em>, <em>id=''</em>, <em>parentid=''</em>, <em>stashid=''</em><span class="sig-paren">)</span><a class="headerlink" href="#deviantart.api.Api.post_status" title="Permalink to this definition">¶</a></dt>
+<dd><p>Post a status</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>username</strong> &#8211; The body of the status</li>
+<li><strong>id</strong> &#8211; The id of the object you wish to share</li>
+<li><strong>parentid</strong> &#8211; The parentid of the object you wish to share</li>
+<li><strong>stashid</strong> &#8211; The stashid of the object you wish to add to the status</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="deviantart.api.Api.rename_notes_folder">
+<code class="descname">rename_notes_folder</code><span class="sig-paren">(</span><em>title</em>, <em>folderid</em><span class="sig-paren">)</span><a class="headerlink" href="#deviantart.api.Api.rename_notes_folder" title="Permalink to this definition">¶</a></dt>
+<dd><p>Rename a folder</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>title</strong> &#8211; New title of the folder</li>
+<li><strong>folderid</strong> &#8211; The UUID of the folder to rename</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="deviantart.api.Api.search_tags">
+<code class="descname">search_tags</code><span class="sig-paren">(</span><em>tag_name</em><span class="sig-paren">)</span><a class="headerlink" href="#deviantart.api.Api.search_tags" title="Permalink to this definition">¶</a></dt>
+<dd><p>Searches for tags</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>tag_name</strong> &#8211; Partial tag name to get autocomplete suggestions for</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="deviantart.api.Api.send_note">
+<code class="descname">send_note</code><span class="sig-paren">(</span><em>to</em>, <em>subject=''</em>, <em>body=''</em>, <em>noetid=''</em><span class="sig-paren">)</span><a class="headerlink" href="#deviantart.api.Api.send_note" title="Permalink to this definition">¶</a></dt>
+<dd><p>Send a note</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>to</strong> &#8211; The username(s) that this note is to</li>
+<li><strong>subject</strong> &#8211; The subject of the note</li>
+<li><strong>body</strong> &#8211; The body of the note</li>
+<li><strong>noetid</strong> &#8211; The UUID of the note that is being responded to</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="deviantart.api.Api.unfave">
+<code class="descname">unfave</code><span class="sig-paren">(</span><em>deviationid</em>, <em>folderid=''</em><span class="sig-paren">)</span><a class="headerlink" href="#deviantart.api.Api.unfave" title="Permalink to this definition">¶</a></dt>
+<dd><p>Remove deviation from favourites</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>deviationid</strong> &#8211; Id of the Deviation to unfavourite</li>
+<li><strong>folderid</strong> &#8211; Optional UUID remove from a single collection folder</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="deviantart.api.Api.unwatch">
+<code class="descname">unwatch</code><span class="sig-paren">(</span><em>username</em><span class="sig-paren">)</span><a class="headerlink" href="#deviantart.api.Api.unwatch" title="Permalink to this definition">¶</a></dt>
+<dd><p>Unwatch a user</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>username</strong> &#8211; The username you want to unwatch</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="deviantart.api.Api.update_user">
+<code class="descname">update_user</code><span class="sig-paren">(</span><em>user_is_artist=''</em>, <em>artist_level=''</em>, <em>artist_specialty=''</em>, <em>real_name=''</em>, <em>tagline=''</em>, <em>countryid=''</em>, <em>website=''</em>, <em>bio=''</em><span class="sig-paren">)</span><a class="headerlink" href="#deviantart.api.Api.update_user" title="Permalink to this definition">¶</a></dt>
+<dd><p>Update the users profile information</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>user_is_artist</strong> &#8211; Is the user an artist?</li>
+<li><strong>artist_level</strong> &#8211; If the user is an artist, what level are they</li>
+<li><strong>artist_specialty</strong> &#8211; If the user is an artist, what is their specialty</li>
+<li><strong>real_name</strong> &#8211; The users real name</li>
+<li><strong>tagline</strong> &#8211; The users tagline</li>
+<li><strong>countryid</strong> &#8211; The users location</li>
+<li><strong>website</strong> &#8211; The users personal website</li>
+<li><strong>bio</strong> &#8211; The users bio</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="deviantart.api.Api.watch">
+<code class="descname">watch</code><span class="sig-paren">(</span><em>username</em>, <em>watch={'scraps': True</em>, <em>'deviations': True</em>, <em>'collections': True</em>, <em>'activity': True</em>, <em>'forum_threads': True</em>, <em>'critiques': True</em>, <em>'journals': True</em>, <em>'friend': True}</em><span class="sig-paren">)</span><a class="headerlink" href="#deviantart.api.Api.watch" title="Permalink to this definition">¶</a></dt>
+<dd><p>Watch a user</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>username</strong> &#8211; The username you want to watch</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="deviantart.api.Api.whofaved_deviation">
+<code class="descname">whofaved_deviation</code><span class="sig-paren">(</span><em>deviationid</em>, <em>offset=0</em>, <em>limit=10</em><span class="sig-paren">)</span><a class="headerlink" href="#deviantart.api.Api.whofaved_deviation" title="Permalink to this definition">¶</a></dt>
+<dd><p>Fetch a list of users who faved the deviation</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>deviationid</strong> &#8211; The deviationid you want to fetch</li>
+<li><strong>offset</strong> &#8211; the pagination offset</li>
+<li><strong>limit</strong> &#8211; the pagination limit</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="exception">
+<dt id="deviantart.api.DeviantartError">
+<em class="property">exception </em><code class="descclassname">deviantart.api.</code><code class="descname">DeviantartError</code><a class="headerlink" href="#deviantart.api.DeviantartError" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal"><span class="pre">exceptions.Exception</span></code></p>
+<p>Representing API Errors</p>
+<dl class="attribute">
+<dt id="deviantart.api.DeviantartError.message">
+<code class="descname">message</code><a class="headerlink" href="#deviantart.api.DeviantartError.message" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+</div>
+<div class="section" id="module-deviantart.comment">
+<span id="deviantart-comment-module"></span><h2>deviantart.comment module<a class="headerlink" href="#module-deviantart.comment" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="deviantart-comment">
+<h3>deviantart.comment<a class="headerlink" href="#deviantart-comment" title="Permalink to this headline">¶</a></h3>
+<p>Data model of the comment object</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">copyright:</th><td class="field-body"><ol class="first last loweralpha simple" start="3">
+<li>2015 by Kevin Eichhorn</li>
+</ol>
+</td>
+</tr>
+</tbody>
+</table>
+<dl class="class">
+<dt id="deviantart.comment.Comment">
+<em class="property">class </em><code class="descclassname">deviantart.comment.</code><code class="descname">Comment</code><a class="headerlink" href="#deviantart.comment.Comment" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal"><span class="pre">object</span></code></p>
+<dl class="method">
+<dt id="deviantart.comment.Comment.from_dict">
+<code class="descname">from_dict</code><span class="sig-paren">(</span><em>c</em><span class="sig-paren">)</span><a class="headerlink" href="#deviantart.comment.Comment.from_dict" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+</div>
+<div class="section" id="module-deviantart.deviation">
+<span id="deviantart-deviation-module"></span><h2>deviantart.deviation module<a class="headerlink" href="#module-deviantart.deviation" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="deviantart-deviation">
+<h3>deviantart.deviation<a class="headerlink" href="#deviantart-deviation" title="Permalink to this headline">¶</a></h3>
+<p>Data model of the deviation object</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">copyright:</th><td class="field-body"><ol class="first last loweralpha simple" start="3">
+<li>2015 by Kevin Eichhorn</li>
+</ol>
+</td>
+</tr>
+</tbody>
+</table>
+<dl class="class">
+<dt id="deviantart.deviation.Deviation">
+<em class="property">class </em><code class="descclassname">deviantart.deviation.</code><code class="descname">Deviation</code><a class="headerlink" href="#deviantart.deviation.Deviation" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal"><span class="pre">object</span></code></p>
+<dl class="method">
+<dt id="deviantart.deviation.Deviation.from_dict">
+<code class="descname">from_dict</code><span class="sig-paren">(</span><em>d</em><span class="sig-paren">)</span><a class="headerlink" href="#deviantart.deviation.Deviation.from_dict" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+</div>
+<div class="section" id="module-deviantart.message">
+<span id="deviantart-message-module"></span><h2>deviantart.message module<a class="headerlink" href="#module-deviantart.message" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="deviantart-message">
+<h3>deviantart.message<a class="headerlink" href="#deviantart-message" title="Permalink to this headline">¶</a></h3>
+<p>Data model of the message object</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">copyright:</th><td class="field-body"><ol class="first last loweralpha simple" start="3">
+<li>2015 by Kevin Eichhorn</li>
+</ol>
+</td>
+</tr>
+</tbody>
+</table>
+<dl class="class">
+<dt id="deviantart.message.Message">
+<em class="property">class </em><code class="descclassname">deviantart.message.</code><code class="descname">Message</code><a class="headerlink" href="#deviantart.message.Message" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal"><span class="pre">object</span></code></p>
+<dl class="method">
+<dt id="deviantart.message.Message.from_dict">
+<code class="descname">from_dict</code><span class="sig-paren">(</span><em>m</em><span class="sig-paren">)</span><a class="headerlink" href="#deviantart.message.Message.from_dict" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+</div>
+<div class="section" id="module-deviantart.status">
+<span id="deviantart-status-module"></span><h2>deviantart.status module<a class="headerlink" href="#module-deviantart.status" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="deviantart-status">
+<h3>deviantart.status<a class="headerlink" href="#deviantart-status" title="Permalink to this headline">¶</a></h3>
+<p>Data model of the status object</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">copyright:</th><td class="field-body"><ol class="first last loweralpha simple" start="3">
+<li>2015 by Kevin Eichhorn</li>
+</ol>
+</td>
+</tr>
+</tbody>
+</table>
+<dl class="class">
+<dt id="deviantart.status.Status">
+<em class="property">class </em><code class="descclassname">deviantart.status.</code><code class="descname">Status</code><a class="headerlink" href="#deviantart.status.Status" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal"><span class="pre">object</span></code></p>
+<dl class="method">
+<dt id="deviantart.status.Status.from_dict">
+<code class="descname">from_dict</code><span class="sig-paren">(</span><em>s</em><span class="sig-paren">)</span><a class="headerlink" href="#deviantart.status.Status.from_dict" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+</div>
+<div class="section" id="module-deviantart.user">
+<span id="deviantart-user-module"></span><h2>deviantart.user module<a class="headerlink" href="#module-deviantart.user" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="deviantart-user">
+<h3>deviantart.user<a class="headerlink" href="#deviantart-user" title="Permalink to this headline">¶</a></h3>
+<p>Data model of the user object</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">copyright:</th><td class="field-body"><ol class="first last loweralpha simple" start="3">
+<li>2015 by Kevin Eichhorn</li>
+</ol>
+</td>
+</tr>
+</tbody>
+</table>
+<dl class="class">
+<dt id="deviantart.user.User">
+<em class="property">class </em><code class="descclassname">deviantart.user.</code><code class="descname">User</code><a class="headerlink" href="#deviantart.user.User" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal"><span class="pre">object</span></code></p>
+<dl class="method">
+<dt id="deviantart.user.User.from_dict">
+<code class="descname">from_dict</code><span class="sig-paren">(</span><em>d</em><span class="sig-paren">)</span><a class="headerlink" href="#deviantart.user.User.from_dict" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+</div>
+<div class="section" id="module-deviantart">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-deviantart" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="deviantart">
+<h3>deviantart<a class="headerlink" href="#deviantart" title="Permalink to this headline">¶</a></h3>
+<p>A Python wrapper for the DeviantArt API</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">copyright:</th><td class="field-body"><ol class="first last loweralpha simple" start="3">
+<li>2015 by Kevin Eichhorn</li>
+</ol>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+
+
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+      
+        <a href="reference.html" class="btn btn-neutral" title="Reference" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2015, Kevin Eichhorn.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'./',
+            VERSION:'0.1.3',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true
+        };
+    </script>
+      <script type="text/javascript" src="_static/jquery.js"></script>
+      <script type="text/javascript" src="_static/underscore.js"></script>
+      <script type="text/javascript" src="_static/doctools.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>
