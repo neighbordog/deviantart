@@ -1,5 +1,6 @@
 test.py
 
+*.pyc
 *.bak
 *.egg
 *.egg-info
