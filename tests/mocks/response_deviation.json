@@ -1,0 +1,58 @@
+{
+   "title" : "Jark Promo",
+   "deviationid" : "234546F5-C9D1-A9B1-D823-47C4E3D2DB95",
+   "download_filesize" : 58152,
+   "category_path" : "darelated/deviousfun",
+   "is_mature" : false,
+   "is_deleted" : false,
+   "thumbs" : [
+      {
+         "transparency" : false,
+         "height" : 124,
+         "width" : 150,
+         "src" : "http://t02.deviantart.net/xsBzNtUchXtyCS5LC5BpXWElY4A=/fit-in/150x150/filters:no_upscale():origin()/pre08/9ee5/th/pre/i/2005/098/2/6/jark_promo_by_devart.jpg"
+      },
+      {
+         "src" : "http://t05.deviantart.net/NpNV-_DQUBg2I5QHXD-5gpnYNaQ=/300x200/filters:fixed_height(100,100):origin()/pre08/9ee5/th/pre/i/2005/098/2/6/jark_promo_by_devart.jpg",
+         "height" : 200,
+         "width" : 242,
+         "transparency" : false
+      },
+      {
+         "height" : 248,
+         "width" : 300,
+         "transparency" : false,
+         "src" : "http://t13.deviantart.net/af4hHtZ6_82ii-tqOilj8ZjBjzg=/fit-in/300x900/filters:no_upscale():origin()/pre08/9ee5/th/pre/i/2005/098/2/6/jark_promo_by_devart.jpg"
+      }
+   ],
+   "preview" : {
+      "transparency" : false,
+      "width" : 556,
+      "height" : 459,
+      "src" : "http://img04.deviantart.net/db06/i/2005/098/2/6/jark_promo_by_devart.jpg"
+   },
+   "author" : {
+      "type" : "admin",
+      "usericon" : "http://a.deviantart.net/avatars/d/e/devart.png?2",
+      "username" : "devart",
+      "userid" : "E2C3A89D-9A7B-3FA1-BBF5-5F8841ABB8D7"
+   },
+   "url" : "http://devart.deviantart.com/art/Jark-Promo-15972403",
+   "stats" : {
+      "comments" : 0,
+      "favourites" : 209
+   },
+   "is_downloadable" : true,
+   "published_time" : 1110510523,
+   "printid" : null,
+   "allows_comments" : false,
+   "category" : "Devious Fun",
+   "content" : {
+      "filesize" : 58152,
+      "transparency" : false,
+      "height" : 459,
+      "width" : 556,
+      "src" : "http://img04.deviantart.net/db06/i/2005/098/2/6/jark_promo_by_devart.jpg"
+   },
+   "is_favourited" : false
+}
