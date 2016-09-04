@@ -7,9 +7,15 @@
     :copyright: (c) 2015 by Kevin Eichhorn
 """
 
-from urllib import urlencode
-from urllib2 import HTTPError
-from sanction import Client, transport_headers
+from __future__ import absolute_import
+
+try:
+    from urllib import urlencode
+    from urllib2 import HTTPError
+except ImportError:
+    from urllib.parse import urlencode
+    from urllib.error import HTTPError
+from sanction import Client
 
 from .deviation import Deviation
 from .user import User
@@ -84,7 +90,7 @@ class Api(object):
             try:
                 self.oauth.request_token(grant_type="refresh_token", refresh_token=refresh_token)
                 self.refresh_token = self.oauth.refresh_token
-            except HTTPError, e:
+            except HTTPError as e:
 
                 if e.code == 401:
                     raise DeviantartError("Unauthorized: Please check your credentials (client_id and client_secret).")
@@ -94,7 +100,7 @@ class Api(object):
             try:
                 self.oauth.request_token(grant_type=self.standard_grant_type, redirect_uri=self.redirect_uri, code=code)
                 self.refresh_token = self.oauth.refresh_token
-            except HTTPError, e:
+            except HTTPError as e:
 
                 if e.code == 401:
                     raise DeviantartError("Unauthorized: Please check your credentials (client_id and client_secret).")
@@ -103,7 +109,7 @@ class Api(object):
         elif self.standard_grant_type == "client_credentials":
             try:
                 self.oauth.request_token(grant_type=self.standard_grant_type)
-            except HTTPError, e:
+            except HTTPError as e:
 
                 if e.code == 401:
                     raise DeviantartError("Unauthorized: Please check your credentials (client_id and client_secret).")
@@ -1720,9 +1726,10 @@ class Api(object):
             request_parameter = endpoint
 
         try:
-            response = self.oauth.request(request_parameter, data=urlencode(post_data, True))
+            encdata = urlencode(post_data, True).encode('utf-8')
+            response = self.oauth.request(request_parameter, data=encdata)
             self._checkResponseForErrors(response)
-        except HTTPError, e:
+        except HTTPError as e:
             raise DeviantartError(e)
 
         return response

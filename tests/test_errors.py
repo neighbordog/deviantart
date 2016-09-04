@@ -1,7 +1,9 @@
+from __future__ import absolute_import
+
 import unittest
 import deviantart
 from deviantart.api import DeviantartError
-from helpers import mock_response
+from .helpers import mock_response
 
 
 class ErrorsTest(unittest.TestCase):
