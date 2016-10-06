@@ -1,0 +1,29 @@
+{
+    "artist_level": null, 
+    "artist_specialty": null, 
+    "bio": "", 
+    "country": "Unknown", 
+    "countryid": 0, 
+    "cover_photo": "", 
+    "is_watching": false, 
+    "last_status": null, 
+    "profile_pic": null, 
+    "profile_url": "http://devart.deviantart.com", 
+    "real_name": "DeviantArt System Bot", 
+    "stats": {
+        "profile_comments": 209961, 
+        "profile_pageviews": 2076161, 
+        "user_comments": 0, 
+        "user_deviations": 9, 
+        "user_favourites": 0
+    }, 
+    "tagline": "", 
+    "user": {
+        "type": "admin", 
+        "usericon": "http://a.deviantart.net/avatars/d/e/devart.png?2", 
+        "userid": "E2C3A89D-9A7B-3FA1-BBF5-5F8841ABB8D7", 
+        "username": "devart"
+    }, 
+    "user_is_artist": false, 
+    "website": "http://www.deviantart.com"
+}
