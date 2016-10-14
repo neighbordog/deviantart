@@ -1,4 +1,4 @@
-deviantart 0.1.3
+deviantart 0.1.4
 ======================================
 
 'deviantart' is a python package that provides easy access to the deviantart API.
