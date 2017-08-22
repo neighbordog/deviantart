@@ -357,7 +357,7 @@ class Api(object):
         :param limit: the pagination limit
         """
 
-        response = self._req('/deviation/whofaved', post_data={
+        response = self._req('/deviation/whofaved', get_data={
             'deviationid' : deviationid,
             'offset' : offset,
             'limit' : limit
