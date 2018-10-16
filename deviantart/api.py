@@ -731,7 +731,6 @@ class Api(object):
     def get_gallery_all(self, username='', offset=0, limit=10):
         """
         Get all of a user's deviation
-        To automatically fetch all, use fetch_gallery_all
 
         :param username: The user to query, defaults to current user
         :param offset: the pagination offset
