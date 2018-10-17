@@ -728,6 +728,42 @@ class Api(object):
 
 
 
+    def get_gallery_all(self, username='', offset=0, limit=10):
+        """
+        Get all of a user's deviations
+
+        :param username: The user to query, defaults to current user
+        :param offset: the pagination offset
+        :param limit: the pagination limit
+        """
+        if not username:
+            raise DeviantartError('No username defined.')
+
+        response = self._req('/gallery/all', {'username': username,
+                                               'offset': offset,
+                                               'limit': limit})
+
+        deviations = []
+
+        for item in response['results']:
+            d = Deviation()
+            d.from_dict(item)
+            deviations.append(d)
+
+        if "name" in response:
+            name = response['name']
+        else:
+            name = None
+
+        return {
+            "results": deviations,
+            "name": name,
+            "has_more": response['has_more'],
+            "next_offset": response['next_offset']
+        }
+
+
+
     def get_gallery_folder(self, username="", folderid="", mode="popular", offset=0, limit=10):
 
         """Fetch gallery folder contents
