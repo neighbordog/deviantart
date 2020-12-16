@@ -810,6 +810,48 @@ class Api(object):
             "has_more" : response['has_more'],
             "next_offset" : response['next_offset']
         }
+    
+    
+    
+    def get_gallery_all(self, username="", mode="popular", offset=0, limit=10):
+
+        """Fetch entire gallery content
+
+        :param username: The user to query, defaults to current user
+        :param mode: Sort results by either newest or popular
+        :param offset: the pagination offset
+        :param limit: the pagination limit
+        """
+
+        if not username and self.standard_grant_type == "authorization_code":
+            response = self._req('/gallery/all', {
+                "mode":mode,
+                "offset":offset,
+                "limit":limit
+            })
+        else:
+            if not username:
+                raise DeviantartError("No username defined.")
+            else:
+                response = self._req('/gallery/all', {
+                    "username":username,
+                    "mode":mode,
+                    "offset":offset,
+                    "limit":limit
+                })
+
+        deviations = []
+
+        for item in response['results']:
+            d = Deviation()
+            d.from_dict(item)
+            deviations.append(d)
+
+        return {
+            "results" : deviations,
+            "has_more" : response['has_more'],
+            "next_offset" : response['next_offset']
+        }
 
 
 
