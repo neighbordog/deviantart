@@ -274,7 +274,9 @@ class Api(object):
                 response = self._req('/browse/tags', {
                     "tag":tag,
                     "offset":offset,
-                    "limit":limit
+                    "limit":limit,
+                    "with_session": with_session,
+                    "mature_content": mature_content
                 })
             else:
                 raise DeviantartError("No tag defined.")
