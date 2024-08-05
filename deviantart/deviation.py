@@ -37,6 +37,7 @@ class Deviation(object):
 		self.challenge = None
 		self.challenge_entry = None
 		self.motion_book = None
+		self.tier_access = None
 		self.html = None
 		self.css = None
 	
@@ -116,7 +117,10 @@ class Deviation(object):
 			self.challenge_entry = d['challenge_entry']
 			
 		if 'motion_book' in d:
-			self.motion_book = d['motion_book']			
+			self.motion_book = d['motion_book']
+
+		if 'tier_access' in d:
+			self.tier_access = d['tier_access']
 		
 		if 'html' in d:
 			self.html = d['html']

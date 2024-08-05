@@ -669,7 +669,7 @@ class Api(object):
 
 
 
-    def get_gallery_folders(self, username="", calculate_size=False, ext_preload=False, offset=0, limit=10):
+    def get_gallery_folders(self, username="", calculate_size=False, ext_preload=False, offset=0, limit=10, mature_content=False):
 
         """Fetch gallery folders
 
@@ -685,7 +685,8 @@ class Api(object):
                 "calculate_size":calculate_size,
                 "ext_preload":ext_preload,
                 "offset":offset,
-                "limit":limit
+                "limit":limit,
+                "mature_content":mature_content
             })
         else:
             if not username:
@@ -696,7 +697,8 @@ class Api(object):
                     "calculate_size":calculate_size,
                     "ext_preload":ext_preload,
                     "offset":offset,
-                    "limit":limit
+                    "limit":limit,
+                    "mature_content":mature_content
                 })
 
         folders = []
@@ -728,7 +730,7 @@ class Api(object):
 
 
 
-    def get_gallery_all(self, username='', offset=0, limit=10):
+    def get_gallery_all(self, username='', offset=0, limit=10, mature_content=False):
         """
         Get all of a user's deviations
 
@@ -741,7 +743,8 @@ class Api(object):
 
         response = self._req('/gallery/all', {'username': username,
                                                'offset': offset,
-                                               'limit': limit})
+                                               'limit': limit,
+                                               'mature_content': mature_content})
 
         deviations = []
 
@@ -764,7 +767,7 @@ class Api(object):
 
 
 
-    def get_gallery_folder(self, username="", folderid="", mode="popular", offset=0, limit=10):
+    def get_gallery_folder(self, username="", folderid="", mode="popular", offset=0, limit=10, mature_content=False):
 
         """Fetch gallery folder contents
 
@@ -779,7 +782,8 @@ class Api(object):
             response = self._req('/gallery/{}'.format(folderid), {
                 "mode":mode,
                 "offset":offset,
-                "limit":limit
+                "limit":limit,
+                "mature_content": mature_content
             })
         else:
             if not username:
@@ -789,7 +793,8 @@ class Api(object):
                     "username":username,
                     "mode":mode,
                     "offset":offset,
-                    "limit":limit
+                    "limit":limit,
+                    "mature_content": mature_content
                 })
 
         deviations = []
